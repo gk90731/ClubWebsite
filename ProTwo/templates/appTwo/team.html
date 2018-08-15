@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- styles -->
+
+  <link rel="stylesheet" href="{% static "css/fancybox/jquery.fancybox.css" %}">
+  <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" />
+  <link href="{% static "css/bootstrap-theme.css" %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static "css/slippry.css" %}">
+  <link href="{% static "css/style.css" %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static "color/default.css" %}">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <script src="{% static "js/modernizr.custom.js" %}"></script>
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top" >
+    <div class="container-fluid">
+
+
+
+        <li><a class="navbar-brand" style="margin-left:50px" href="{% url 'home' %}">PROJEKT</a></li>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" style="hieght:200px">
+        <li><a class="navbar-link" style="margin-left:100px" href="{% url 'home' %}">Home</a></li>
+        <li><a class="navbar-link" href="{% url 'selected_users' %}">Team</a></li>
+        <li><a class="navbar-link" href="{% url 'work' %}">Work</a></li>
+        <li><a class="navbar-link" href="{% url 'about' %}">About</a></li>
+
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a><span class="glyphicon glyphicon-log-in"></span> Become team member</a></li>
+      </ul>
+    </div>
+
+
+    </div>
+
+  </nav>
+
+<div class="container">
+	<br><br>
+  <h2>TEAM:</h2>
+
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Branch</th>
+        <th>Email</th>
+        <th>Contact no.</th>
+        <th>Semester</th>
+        <th>Skills:</th>
+        <th>Also interested in:</th>
+        <th>Workshop Attended:</th>
+
+
+      </tr>
+    </thead>
+
+    {% if users %}
+    <tbody>
+      {% for person in users %}
+      <tr>
+        <td>{{person.first_name}}</td>
+        <td>{{person.branch}}</td>
+        <td>{{person.email}}</td>
+        <td>{{person.contact}}</td>
+        <td>{{person.semester}}</td>
+        <td>{{person.skills}}</td>
+        <td>{{person.interest}}</td>
+        <td>{{person.workshop}}</td>
+      {% endfor %}
+      </tr>
+    </tbody>
+
+
+
+    </table>
+    {% endif %}
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Projekt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- styles -->
+
+<link rel="stylesheet" href="{% static "css/fancybox/jquery.fancybox.css" %}">
+<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" />
+<link href="{% static "css/bootstrap-theme.css" %}" rel="stylesheet" />
+<link rel="stylesheet" href="{% static "css/slippry.css" %}">
+<link href="{% static "css/style.css" %}" rel="stylesheet" />
+<link rel="stylesheet" href="{% static "color/default.css" %}">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<script src="{% static "js/modernizr.custom.js" %}"></script>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.clearfix {
+    overflow: auto;
+	width:100%;
+}
+
+</style>
+
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top" >
+    <div class="container-fluid">
+
+
+
+        <li><a class="navbar-brand" style="margin-left:50px" href="{% url 'home' %}">PROJEKT</a></li>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" style="hieght:200px">
+        <li><a class="navbar-link" style="margin-left:100px" href="{% url 'home' %}">Home</a></li>
+        <li><a class="navbar-link" href="{% url 'selected_users' %}">Team</a></li>
+        <li><a class="navbar-link" href="{% url 'work' %}">Work</a></li>
+        <li><a class="navbar-link" href="{% url 'about' %}">About</a></li>
+
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'users' %}"><span class="glyphicon glyphicon-log-in"></span> Become team member</a></li>
+      </ul>
+    </div>
+
+
+    </div>
+
+  </nav>
+<br><br><br><br><br><br><br>
+<div class="center" class="jumbotron">
+
+	<b class="big">WORKS:</b>
+
+	<table class="clearfix">
+
+	  <tr>
+		<td>Projects Completed:</td>
+		<td><a target="_blank" href="{% url 'completed_projects' %}">Click Here! </a>to see completed Projects and all info.</td>
+	  </tr>
+	  <tr>
+		<td>Progressing Projects:</td>
+		<td><a href="target="_blank" #">Click Here! </a>to see completed Projects and all info.</td>
+	  </tr>
+	</table>
+
+</div>
+
+
+</body>
+</html>

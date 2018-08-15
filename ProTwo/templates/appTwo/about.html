@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Projekt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- styles -->
+<link rel="stylesheet" href="{% static "css/fancybox/jquery.fancybox.css" %}">
+<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" />
+<link href="{% static "css/bootstrap-theme.css" %}" rel="stylesheet" />
+<link rel="stylesheet" href="{% static "css/slippry.css" %}">
+<link href="{% static "css/style.css" %}" rel="stylesheet" />
+<link rel="stylesheet" href="{% static "color/default.css" %}">
+<style>
+	.boxed {
+	  border: 10px solid green ;
+	  background-color:#F1F1F1;
+	  height:auto;
+	  width:auto;
+	}
+	body  {
+    background-image: url("img/3.jpg");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top" >
+    <div class="container-fluid">
+
+
+
+        <li><a class="navbar-brand" style="margin-left:50px" href="{% url 'home' %}"> PROJEKT</a></li>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" style="hieght:200px">
+        <li><a class="navbar-link" style="margin-left:100px" href="{% url 'home' %}">Home</a></li>
+        <li><a class="navbar-link" href="{% url 'selected_users' %}">Team</a></li>
+        <li><a class="navbar-link" href="{% url 'work' %}">Work</a></li>
+        <li><a class="navbar-link" href="{% url 'about' %}">About</a></li>
+
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'users' %}"><span class="glyphicon glyphicon-log-in"></span> Become team member</a></li>
+      </ul>
+    </div>
+
+
+    </div>
+
+  </nav>
+<div class="col-lg-4 col-lg-offset-4">
+<br><br>
+<div class="boxed" style="margin-bottom:35px">
+	<div class="container-fluid">
+		<h2>ABOUT:</h2>
+
+	<p style="align-items center">The club opened on 18th July 2018 under guidance of Dr. Manisha Sharma mam
+									Professor & HOD(Department Of Electronics And Telecommunication) <br>
+
+	 <li>This club aims to make full fledged electronics enginners with updated technical knowledge using pooling technique.</li><br>
+	 <li>The club aims to make huge number of woking projects and expect member to help with that.</li><br>
+
+	 <li>The club would appreciate if the members provide plan/idea for innovative projects.</li><br>
+	 <li>The club provides platform for participating in various technical competitions.</li>
+	</p>
+		<h2>Benefits and norms of club:</h2>
+
+	<p>
+	<li>Individually choose a project. </li><br>
+	<li>Select team members as per requirement of project from team section of website.</li><br>
+	<li>Send project name , team members name and breif detail of project on this email id <mark>projektclubbit@gmail.com</mark>.</li><br>
+	<li>Start working on project.</li><br>
+	<li>After completion of project prepare documentation and make a video of working project.</li><br>
+	<li>Upload the video on youtube.</li><br>
+	<li>Send project documentation and video link on the same email id .</li><br>
+	<li>Whole this will benifit team members and other individuals of Projekt Club.</li><br>
+	</p>
+
+	</div>
+</div>
+
+</body>
+</html>
