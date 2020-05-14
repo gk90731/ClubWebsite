@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<title>Aptitude Test</title>
+<link rel="icon" href="{% static "img/technohub.png" %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- styles -->
+
+  <link rel="stylesheet" href="{% static "css/fancybox/jquery.fancybox.css" %}">
+  <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" />
+  <link href="{% static "css/bootstrap-theme.css" %}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static "css/slippry.css" %}">
+  <link href="{% static "css/style.css" %}" rel="stylesheet" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+
+  <link rel="stylesheet" href="{% static "color/default.css" %}">
+<style>
+    div.a {
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+  <div id="display">
+
+</div>
+  <div class="container" id="submitted">
+    <div class="jumbotron">
+
+
+    	<div class = "a">
+    	<h4 text-align: center;>An aptitude test by</h4>
+    	<h2 text-align: center;>Training & Placement Cell</h2>
+    	<h3 text-align: center;>BIT Durg</h3>
+    	</div>
+        <br>
+    	<br>
+
+        {% if staff_qform %}
+
+          {% for person in staff_qform %}
+
+            {{person.question1}}
+            <ul>
+              <li>{{person.option11}}</li>
+              <li>{{person.option12}}</li>
+              <li>{{person.option13}}</li>
+              <li>{{person.option14}}</li>
+            </ul>
+            {{person.question2}}
+            <ul>
+              <li>{{person.option21}}</li>
+              <li>{{person.option22}}</li>
+              <li>{{person.option23}}</li>
+              <li>{{person.option24}}</li>
+            </ul>
+            {{person.question3}}
+            <ul>
+              <li>{{person.option31}}</li>
+              <li>{{person.option32}}</li>
+              <li>{{person.option33}}</li>
+              <li>{{person.option34}}</li>
+            </ul>
+            {{person.question4}}
+            <ul>
+              <li>{{person.option41}}</li>
+              <li>{{person.option42}}</li>
+              <li>{{person.option43}}</li>
+              <li>{{person.option44}}</li>
+            </ul>
+            {{person.question5}}
+            <ul>
+              <li>{{person.option51}}</li>
+              <li>{{person.option52}}</li>
+              <li>{{person.option53}}</li>
+              <li>{{person.option54}}</li>
+            </ul>
+            {{person.question6}}
+            <ul>
+              <li>{{person.option61}}</li>
+              <li>{{person.option62}}</li>
+              <li>{{person.option63}}</li>
+              <li>{{person.option64}}</li>
+            </ul>
+            {{person.question7}}
+            <ul>
+              <li>{{person.option71}}</li>
+              <li>{{person.option72}}</li>
+              <li>{{person.option73}}</li>
+              <li>{{person.option74}}</li>
+            </ul>
+            {{person.question8}}
+            <ul>
+              <li>{{person.option81}}</li>
+              <li>{{person.option82}}</li>
+              <li>{{person.option83}}</li>
+              <li>{{person.option84}}</li>
+            </ul>
+            {{person.question9}}
+            <ul>
+              <li>{{person.option91}}</li>
+              <li>{{person.option92}}</li>
+              <li>{{person.option93}}</li>
+              <li>{{person.option94}}</li>
+            </ul>
+            {{person.question10}}
+            <ul>
+              <li>{{person.option101}}</li>
+              <li>{{person.option102}}</li>
+              <li>{{person.option103}}</li>
+              <li>{{person.option104}}</li>
+            </ul>
+            {{person.question11}}
+            <ul>
+              <li>{{person.option111}}</li>
+              <li>{{person.option12}}</li>
+              <li>{{person.option113}}</li>
+              <li>{{person.option114}}</li>
+            </ul>
+            {{person.question12}}
+            <ul>
+              <li>{{person.option121}}</li>
+              <li>{{person.option122}}</li>
+              <li>{{person.option123}}</li>
+              <li>{{person.option124}}</li>
+            </ul>
+            {{person.question13}}
+            <ul>
+              <li>{{person.option131}}</li>
+              <li>{{person.option132}}</li>
+              <li>{{person.option133}}</li>
+              <li>{{person.option134}}</li>
+            </ul>
+            {{person.question14}}
+            <ul>
+              <li>{{person.option141}}</li>
+              <li>{{person.option142}}</li>
+              <li>{{person.option143}}</li>
+              <li>{{person.option144}}</li>
+            </ul>
+            {{person.question15}}
+            <ul>
+              <li>{{person.option151}}</li>
+              <li>{{person.option152}}</li>
+              <li>{{person.option153}}</li>
+              <li>{{person.option154}}</li>
+            </ul>
+
+          {% endfor %}
+
+
+
+
+
+        {% endif %}
+        <form method="POST" id="form1" name="form1">
+          {{ form.as_p }}
+          {% csrf_token %}
+          <input type="submit" class='btn btn-primary' value="Submit">
+
+        </form>
+
+        <!-- javascript -->
+<script src="{% static "js/jquery-1.9.1.min.js" %}"></script>
+<script src="{% static "js/jquery.easing.js" %}"></script>
+<script src="{% static "js/classie.js" %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/slippry.min.js" %}"></script>
+<script src="{% static "js/nagging-menu.js" %}"></script>
+<script src="{% static "js/jquery.nav.js" %}"></script>
+<script src="{% static "js/jquery.scrollTo.js" %}"></script>
+<script src="{% static "js/jquery.fancybox.pack.js" %}"></script>
+<script src="{% static "js/jquery.fancybox-media.js" %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<script src="{% static "js/masonry.pkgd.min.js" %}"></script>
+<script src="{% static "js/imagesloaded.js" %}"></script>
+<script src="{% static "js/jquery.nicescroll.min.js" %}"></script>
+<script src="{% static "js/validate.js" %}"></script>
+<script src="{% static "js/AnimOnScroll.js" %}"></script>
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.7,
+            viewportFactor : 0.2
+        } );
+    </script>
+<script>
+	$(document).ready(function(){
+	  $('#slippry-slider').slippry(
+		defaults = {
+			transition: 'vertical',
+			useCSS: true,
+			speed: 3000,
+			pause: 3000,
+			initSingle: false,
+			auto: true,
+			preload: 'visible',
+			pager: false,
+		}
+	  )
+	});
+</script>
+
+<script src="{% static "js/custom.js" %}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+<a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+
+<div >
+
+</div>
+</body>
+</html>

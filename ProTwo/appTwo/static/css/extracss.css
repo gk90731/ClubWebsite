@@ -1,0 +1,46 @@
+.f {
+    color: #ddd;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .f:hover {
+    color: #3e8e41;
+  }
+  .foxt{
+      font-size: 1.25rem
+  }
+  .ourg {
+      color: white;
+      padding-top: 50px;
+      padding-bottom: 60px
+  }
+  .cabp{
+    padding: 100px
+  }
+  .atp{
+    font-weight: 400
+  }
+  #h{
+    font-family: 'Farro', sans-serif;
+    font-weight: 700;
+    padding-bottom: 30px
+  }
+  .single_footer_img{
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+  .an{
+    align-content: center
+  }
+  #ci{
+    font-size: 3rem;
+    padding-top: 60px;
+    padding-bottom: 40px
+  }
+  #fc{
+    font-size: 1.5rem
+  }
+  .footer_icon{
+    font-size: 1.5rem
+  }

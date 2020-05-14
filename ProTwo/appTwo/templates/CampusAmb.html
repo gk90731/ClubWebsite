@@ -1,0 +1,553 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TechnoHub</title>
+
+      <link rel="icon" href="{% static "img/logo1.jpeg" %}">
+
+
+
+      <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/animate.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/themify-icons.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/flaticon.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/slick.css" %}">
+
+      <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+
+
+
+
+
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+        <div class="sub_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-8">
+                        <div class="sub_menu_right_content">
+                            <a href="#"><i class="flaticon-phone-call"></i>+91-8434986336 &nbsp<span>|</span>&nbsp+91-7722874355</a>   <span>|</span>
+                            <a href="#"><i class="flaticon-at"></i>bit.technohub@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-4">
+                        <div class="sub_menu_social_icon">
+                            <a href="https://www.facebook.com/bit.technohub"><i class="flaticon-facebook"></i></a>
+                            <!--<a href="#"><i class="flaticon-twitter"></i></a>
+                            <a href="#"><i class="flaticon-skype"></i></a>-->
+                            <a href="https://www.instagram.com/bit.technohub/"><i class="flaticon-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_menu_iner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="{% url 'home' %}"> <img  class="reset_img" src="{% static "img/logo1.jpeg" %}"  alt="logo"> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{% url 'blogs' %}">Blogs</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="program.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start a Chapter</a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="{% url 'campus' %}">Campus Ambassador</a>
+                                        <a class="dropdown-item" href="blog.html">TechnoHub Lead</a>
+                                        <a class="dropdown-item" href="{% url 'studentForm' %}">Take an Aptitude Test</a>
+                                    </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Members
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="{% url 'selected_users' %}">Technical </a>
+                                            <a class="dropdown-item" href="{% url 'selected_users_new' %}">Management</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{% url 'team' %}">Team</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{% url 'email' %}">Contact</a>
+                                    </li>
+
+<!--
+                                    <li class="nav-item active">
+                                        <a href="#" class="btn_1">Register</a>
+                                    </li>
+-->
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner_text text-center">
+                        <div class="banner_text_iner">
+                            <h5> <span></span> </h5>
+                            <h1 id = "h"> Campus Ambassador</h1>
+                            <h3>Become A Part of Our Techno-management Community and Make A Difference</h3>
+                            <a href="#cap" class="btn_1">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+    <section class="our_industries padding_top">
+        <div class="container">
+
+                <div class="allign cabp"><a name ="cap"></a><h2>Campus Ambassador Program</h2></div>
+            <div class="row">
+
+            </div>
+
+</div>
+    <!-- service part start-->
+
+    <!-- about part start-->
+    <section class="about_part1 section_bg section_padding">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-lg-6">
+                    <div class="about_img">
+                        <!---<img src="" alt="">-->
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="about_text">
+                        <h2 class="atp" style="text-align:center;">About The Program<br></h2>
+                        <p>Campus Ambassadors are university students who work closely with Techno-management club TechnoHub to raise technical as well as management profile on campus and introduce it to new and diverse student groups.   Best Campus Ambassadors receive recommendation, for marketing and Publicising Work Domains then share their enthusiasm for making a difference through life-changing inter-college experiences.  The program offers a prestigious internship-like experience. They know their campus better than anyone
+                        </p>
+                        <!--<a href="#rcp" class="btn_2">read more</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about part start-->
+
+    <!--::industries start::-->
+
+    <!--::industries end::-->
+
+    <!--::industries start::-->
+     <section class="faq_part section_bg">
+            <div class="allign"><h2>Why Should You Join Campus Ambassador Program?</h2></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div class="faq_content">
+                        <div class="accordion">
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <h2>Certificate of Appreciation</h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Certificate of appreciation from TechnoHub BIT Durg after the successful completion of the tenure which can be one of the highlights of your resume.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h2>Recommendation for Marketing & Publicizing Work Domains
+                                        </h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <p>Best CAs will be recommended as interns in the startups associated with TechnoHub through 36INC. Also, free passes for the events conducted by the club.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                        <div class="faq_content">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h2>Organise Events
+                                            </h2>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p>A chance to conduct entrepreneurial events in your college in collaboration with TechnoHub BIT, Durg.
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <h2>Guidance, Network and Contacts
+                                                </h2>
+                                        </div>
+                                        <div class="accordion-body">
+                                            <p>Working with one of the most dedicated teams of BIT, Durg hence acquiring more skills and professionalism. Learn more about technical and management and grow your network through various college clubs related events.
+                                                </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--::industries end::-->
+
+    <!-- portfolio_part start-->
+    <!---<section class="portfolio_part section_padding">
+        <div class="container"><a name ="rcp"></a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-columns">
+                        <div class="card tittle">
+                            <blockquote class="blockquote mb-0">
+                                <h2>Recent Completed <br>
+                                    Project</h2>
+                            </blockquote>
+                        </div>
+                        <div class="card ">
+                            <div class="card_iner overlay">
+                                <img src="img/gallery/gallery_item.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electrical Engineering</h5>
+                                    <p class="card-text">For together creepeth created second air fill don divide <br>
+                                        said personal crud neil bus </p>
+                                    <a href="#" class="portfolio_btn">read more <img src="img/right-arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card_iner overlay">
+                                <img src="img/gallery/gallery_item_1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electrical Engineering</h5>
+                                    <p class="card-text">For together creepeth created second air fill don divide <br>
+                                        said personal crud neil bus </p>
+                                    <a href="#" class="portfolio_btn">read more <img src="img/right-arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_iner overlay">
+                                <img src="img/gallery/gallery_item_2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electrical Engineering</h5>
+                                    <p class="card-text">For together creepeth created second air fill don divide <br>
+                                        said personal crud neil bus </p>
+                                    <a href="#" class="portfolio_btn">read more <img src="img/right-arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_iner overlay">
+                                <img src="img/gallery/gallery_item_3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electrical Engineering</h5>
+                                    <p class="card-text">For together creepeth created second air fill don divide <br>
+                                        said personal crud neil bus </p>
+                                    <a href="#" class="portfolio_btn">read more <img src="img/right-arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card see_more_project">
+                            <blockquote class="blockquote mb-0">
+                                <a href="#" class="btn_1">more project</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- portfolio_part part end-->
+
+    <!--::industries start::-->
+  <!--::industries end::-->
+
+    <!--::catagory_post start::-->
+    <!---<section class="catagory_post">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="section_tittle">
+                        <h2>Latest Posts of Our
+                            Instagram page</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_catagory_post post_2">
+                        <div class="category_post_img">
+                            <img src="img/blog/blog_1.png" alt="">
+                            <a href="blog.html" class="category_btn">Vocational Training</a>
+                        </div>
+                        <div class="post_text_1 pr_30">
+                            <p><span> By Members Of TechnoHub</span> / Summer Training 2019</p>
+                            <a href="blog.html">
+                                <h3>Vocational Training at DRDO Delhi</h3>
+                            </a>
+                            <div class="post_icon">
+                                <ul>
+                                    <li><i class="ti-comment"></i>2 Comment</li>
+                                    <li><i class="ti-bookmark"></i>Views</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_catagory_post post_2">
+                        <div class="category_post_img">
+                            <img src="img/blog/blog_2.png" alt="">
+                            <a href="blog.html" class="category_btn">Construction</a>
+                        </div>
+                        <div class="post_text_1 pr_30">
+                            <p><span> By Michal</span> / March 30 , 2019</p>
+                            <a href="blog.html">
+                                <h3>You dominion signs good divide appear
+                                    stars void heaven winged</h3>
+                            </a>
+                            <div class="post_icon">
+                                <ul>
+                                    <li><i class="ti-comment"></i>2 Comment</li>
+                                    <li><i class="ti-bookmark"></i>Petrolium, Gas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_catagory_post post_2">
+                        <div class="category_post_img">
+                            <img src="img/blog/blog_3.png" alt="">
+                            <a href="blog.html" class="category_btn">engineering</a>
+                        </div>
+                        <div class="post_text_1 pr_30">
+                            <p><span> By Michal</span> / March 30 , 2019</p>
+                            <a href="blog.html">
+                                <h3>First fowl winged of likeness be rule fish
+                                    Day So that likeness have </h3>
+                            </a>
+                            <div class="post_icon">
+                                <ul>
+                                    <li><i class="ti-comment"></i>2 Comment</li>
+                                    <li><i class="ti-bookmark"></i>Petrolium, Gas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--::catagory_post end::-->
+
+
+    <!--::subscribe area start::-->
+    <section class="subscribe_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="subscribe_iner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 col-xl-5">
+                                <div class="subscribe_area_tittle">
+                                    <h2>Do You Have a Question?</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-xl-6">
+                                <div id="mc_embed_signup">
+                                    <aside class="single_sidebar_widget newsletter_widget">
+                                        <form target="_blank"
+                                            action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                            method="get">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                                    onblur="this.placeholder = 'Enter email'" placeholder='Enter email'
+                                                    required>
+                                            </div>
+                                            <button class="btn_2" type="submit">Subscribe</button>
+
+                                            <div class="info"></div>
+                                        </form>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::subscribe area end::-->
+
+    <!-- footer part start-->
+     <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-3 col-xl-3">
+                    <div class="single-footer-widget footer_1">
+                        <a href="index.html"> <img src="{% static "img/logowhite.png" %}" alt=""> </a>
+                        <p>The club provides an ambiance for students to prepare and to showcase their skills at technical events and entrepreneurship held all across India and Asia in various colleges with the aim to add more feathers in the cap. The ultimate goal of the TechnoHub club is to educate more students and make robotics and entrepreneurship an everyday phenomenon.
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget footer_3">
+                        <h2 style="color:white;"> Our Gallery</h2>
+                        <div class="footer_img">
+                                <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/DSC_0175.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/DSC_0178.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/DSC_0182.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/DSC_0186.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/DSC_0246.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/DSC_0247.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/teame.jpeg" %}" alt="">
+                            </div>
+                            <!---<div class="single_footer_img">
+                                <img src="img/footer_img/1.jpg" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="img/footer_img/2.jpg" alt="">
+                            </div>-->
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/3.jpg" %}" alt="">
+                            </div>
+                            <div class="single_footer_img">
+                                <img src="{% static "img/footer_img/4.jpg" %}" alt="">
+                            </div>
+                            <!---<div class="single_footer_img">
+                                <img src="img/footer_img/5.jpg" alt="">
+                            </div>-->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-xl-3">
+                    <div class="single-footer-widget footer_icon">
+                        <h4 style = "font-size: 50px;">Contact Info</h4>
+                        <p style = "font-size: 22px;">TechnoHub, Bhilai Institute of Technology, Durg, Chhattisgarh 491001</p>
+                        <ul style = "font-size: 22px;">
+                            <li><a href="#"><i class="ti-mobile"></i>+91-8434986336&nbsp<span>|</span>&nbsp+91-7722874355</a></li>
+                            <li><a href="#"><i class="ti-email"></i>bit.technohub@gmail.com</a></li>
+                            <li><a href="#"><i class="ti-world"></i> technohubbit.in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <p class="footer-text m-0">Website developed by <a href="https://www.instagram.com/gaurav__chaudhary/">Kumar Gaurav</a>&<a href="#">&nbspSachet Sabarad</a>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p> -->
+                    <!-- </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="{% static "js/jquery-1.12.1.min.js" %}"></script>
+    <!-- popper js -->
+    <script src="{% static "js/popper.min.js" %}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- magnific js -->
+    <script src="{% static "js/jquery.magnific-popup.js" %}"></script>
+    <!-- swiper js -->
+    <script src="{% static "js/swiper.min.js" %}"></script>
+    <!-- masonry js -->
+    <script src="{% static "js/masonry.pkgd.js" %}"></script>
+    <!-- contact js -->
+    <script src="{% static "js/jquery.ajaxchimp.min.js" %}"></script>
+    <script src="{% static "js/jquery.form.js" %}"></script>
+    <script src="{% static "js/jquery.validate.min.js" %}"></script>
+    <script src="{% static "js/mail-script.js" %}"></script>
+    <script src="{% static "js/contact.js" %}"></script>
+    <script src="{% static "js/slick.min.js" %}"></script>
+    <!-- custom js -->
+    <script src="{% static "js/custom.js" %}"></script>
+</body>
+
+</html>
