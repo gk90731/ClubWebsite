@@ -25,8 +25,6 @@ urlpatterns = [
     path('selected_users/',views.selected_users, name='selected_users'),
     path('selected_users_new/',views.selected_users_new, name='selected_users_new'),
     path('bypass/',views.bypass, name='bypass'),
-    path('staff_qform/',views.staff_qform, name='staff_qform'),
-    path('studentForm/',views.studentForm, name='studentForm'),
     path('work/',views.work, name='work'),
     path('form/',views.tech_teams, name='users'),
     path('form_new/',views.org_teams, name='users_new'),
@@ -38,6 +36,10 @@ urlpatterns = [
     path('lortyuioJKJGFD53298FJJH586ardgklseo/',views.org_notice_form, name='org_notice_form'),
     path('lortyuioJKJlogjio8905dfgH586ardgklseo/',views.createBlog, name='createBlog'),
     path('blogs/',views.createBlogPost, name='blogs'),
+
+    path('question/',views.AptiQuestionView, name='question'),
+
+    path('test/',views.test, name='test'),
 
     path('completed_projects/',views.completed_projects, name='completed_projects'),
     path('admin/', admin.site.urls)

@@ -25,9 +25,9 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 SECRET_KEY = 'f#c5(-=mc=h%#s^epk7psx%qep_$$@_#o-7!2ee4dvlkbmu%f$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['technohubbit.pythonanywhere.com']
+ALLOWED_HOSTS = ['technohubbit.pythonanywhere.com','*']
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'bit.technohub@gmail.com'
@@ -64,10 +64,10 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
-'*','technohubbit.pythonanywhere.com/'
+'https://technohubbit.pythonanywhere.com','http://127.0.0.1'
 ] # If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
 CORS_ORIGIN_REGEX_WHITELIST = [
-    'technohubbit.pythonanywhere.com',
+    'https://technohubbit.pythonanywhere.com','http://127.0.0.1'
 ]
 
 ROOT_URLCONF = 'ProTwo.urls'
